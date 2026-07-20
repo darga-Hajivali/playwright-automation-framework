@@ -1,0 +1,44 @@
+{
+  "validUsers": [
+    {
+      "email": "testuser1@example.com",
+      "password": "TestPassword@123",
+      "firstName": "Test",
+      "lastName": "User1",
+      "fullName": "Test User1"
+    },
+    {
+      "email": "testuser2@example.com",
+      "password": "TestPassword@456",
+      "firstName": "John",
+      "lastName": "Doe",
+      "fullName": "John Doe"
+    },
+    {
+      "email": "testuser3@example.com",
+      "password": "TestPassword@789",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "fullName": "Jane Smith"
+    }
+  ],
+  "invalidCredentials": [
+    {
+      "email": "invalid@example.com",
+      "password": "wrongpassword",
+      "expectedError": "Invalid email or password"
+    },
+    {
+      "email": "testuser1@example.com",
+      "password": "wrongpassword",
+      "expectedError": "Invalid email or password"
+    }
+  ],
+  "emptyCredentials": [
+    {
+      "email": "",
+      "password": "",
+      "expectedError": "Email is required"
+    }
+  ]
+}
